@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the logo component.
+// -----------------------------------------------------------------------------
+
+.header__logo {
+  max-width: 90%;
+  width: 50rem;
+  opacity: 0.1;
+
+  @include tabletPlus {
+    margin-right: 10rem;
+  }
+}

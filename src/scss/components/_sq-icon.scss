@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the square icon component.
+// -----------------------------------------------------------------------------
+
+.sq-icon {
+  width: 5rem;
+  height: 5rem;
+
+  path {
+    fill: $white;
+  }
+}
+
+.sq-icon--red {
+  background-color: $brand-red;
+}
+.sq-icon--blue {
+  background-color: $brand-blue;
+}
+.sq-icon--green {
+  background-color: $brand-green;
+}

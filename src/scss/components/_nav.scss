@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the nav component.
+// -----------------------------------------------------------------------------
+
+.nav {
+  .nav__list {
+    @include tabletPlus {
+      display: flex;
+    }
+
+    .nav__list-item {
+      flex-grow: 1;
+
+      @include tabletPlus {
+        flex-shrink: 0;
+      }
+      @include desktop {
+        @include on-event {
+          .nav__link {
+            transform: translateY(-1rem);
+          }
+        }
+      }
+    }
+
+    .nav__link {
+      display: block;
+      padding: 2rem;
+      background-color: $white;
+      color: $text-color;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 3rem;
+      transition: transform 150ms ease-in-out;
+
+      @include on-event() {
+        background-color: $brand-red;
+        color: $white;
+      }
+
+      &.active {
+        background-color: $brand-blue;
+        color: $white;
+      }
+    }
+  }
+}

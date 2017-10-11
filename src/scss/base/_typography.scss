@@ -1,0 +1,39 @@
+/**
+ * Basic typography style for copy text
+ */
+html { font-size: 62.5%; }
+
+body {
+ color: $text-color;
+ font-weight: 300;
+ font-size: 1.6rem;
+ font-family: $text-font-stack;
+ line-height: 1.5em;
+}
+
+h1 {
+ margin: 0 0 2rem;
+}
+
+h2.subtitle {
+  margin: 0 -2rem 4rem;
+  padding: 1rem 2rem;
+  background-color: $brand-blue;
+  color: $white;
+  font-size: 4.8rem;
+  line-height: 1.2em;
+
+  @include desktop {
+    margin: 0 0 4rem -4rem;
+    padding: 1rem 4rem;
+  }
+}
+
+h3.small-subtitle {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.6em;
+}
