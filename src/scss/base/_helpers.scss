@@ -3,34 +3,40 @@
 // -----------------------------------------------------------------------------
 
 /**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-/**
  * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: $max-width; /* 1 */
-  margin-left: auto; /* 2 */
-  margin-right: auto; /* 2 */
-  width: 100%; /* 1 */
-
-  padding: 8rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5rem 2rem 0;
+  max-width: $max-width;
+  width: 100%;
 
   @include tabletPlus {
-
+    padding: 6rem 2rem 0;
   }
-
   @include desktop {
+    display: grid;
 
+    grid-template-columns: 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+
+    .subtitle {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.container.two-col {
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.container.four-col {
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -52,16 +58,19 @@
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
 .visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
   width: 1px;
+  height: 1px;
+  border: 0;
 }
 
+/**
+ * Remove default list styles
+ */
 .unlist {
   padding: 0;
   list-style: none;

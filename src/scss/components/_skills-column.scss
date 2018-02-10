@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the skills column component.
+// -----------------------------------------------------------------------------
+
+
+.skills-column {
+  ul {
+    list-style: none;
+    padding: 0;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-flow: row wrap;
+  }
+
+  .skills-column__list-item {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    // flex: 0 0 100%;
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        background-color: hsl(0, 0, 85 + ($i * 2));
+      }
+    }
+
+    @include on-event() {
+      background-color: $brand-red;
+      color: $white;
+    }
+  }
+}

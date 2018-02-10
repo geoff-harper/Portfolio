@@ -3,20 +3,9 @@
 // -----------------------------------------------------------------------------
 
 
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Montserrat', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
 
 /// Copy text color
 /// @type Color
@@ -50,15 +39,18 @@ $dark-grey: #1B1B1B !default;
 /// @type Color
 $white: #FFFFFF !default;
 
+/// Image border
+/// @type Border
+$img-border: 1rem solid $light-grey !default;
 
 /// Timing function
-/// @type bezier
+/// @type Bezier
 $timing: cubic-bezier(0.77, 0, 0.175, 1) !default;
 
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 1160px !default;
 
 
 
@@ -70,11 +62,11 @@ $max-width: 1180px !default;
 $breakpoints: (
   'small': 320px,
   'medium': 768px,
-  'large': 1220px,
+  'large': 1200px,
 ) !default;
 
 $tablet-width: 768px;
-$desktop-width: 1220px;
+$desktop-width: 1200px;
 
 
 

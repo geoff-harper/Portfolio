@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the skills column component.
+// -----------------------------------------------------------------------------
+
+.contact-section {
+  margin-bottom: 5rem;
+
+  .contact__form {
+    @include desktop {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 3rem;
+
+      .input-textarea {
+        grid-column: 1 / -1;
+      }
+    }
+    // padding: 3rem 2rem;
+    // background-color: $light-grey;
+
+    label {
+      display: block;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      line-height: 2em;
+    }
+
+    input:not([type="submit"]), textarea {
+      display: block;
+      padding: 1rem;
+      width: 100%;
+      border: none;
+      border: 1px solid $light-grey
+    }
+    textarea {
+      min-height: 10rem;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      font-weight: 400;
+    }
+
+    .button {
+      margin-bottom: 0;
+      max-width: 15rem;
+      width: 100%;
+      font-size: 2rem;
+
+      @include on-event() {
+        box-shadow: inset 0 -6rem 0 0 $brand-blue;
+      }
+    }
+  }
+}

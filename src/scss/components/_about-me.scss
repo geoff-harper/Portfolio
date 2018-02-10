@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the skills column component.
+// -----------------------------------------------------------------------------
+
+.about-section {
+  .about__headshot {
+    max-width: 100%;
+    border: $img-border;
+
+    @include desktop {
+      float: left;
+      max-width: 35%;
+      margin: 0 2rem 2rem 0;
+    }
+  }
+}

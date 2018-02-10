@@ -3,8 +3,9 @@
 // -----------------------------------------------------------------------------
 
 .portfolio-example {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   overflow: hidden;
+  cursor: pointer;
 
   .portfolio-example__link {
     position: relative;
@@ -30,7 +31,7 @@
       background-color: transparentize($brand-green, 0.2);
       cursor: pointer;
       transition: transform 300ms $timing;
-      transform: translateY(100%);
+      transform: translateY(101%);
 
       svg {
         display: block;
@@ -46,6 +47,6 @@
     display: block;
     margin: 0 auto;
     max-width: 100%;
-    border: 1rem solid $light-grey;
+    border: $img-border;
   }
 }

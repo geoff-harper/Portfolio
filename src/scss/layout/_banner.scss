@@ -3,7 +3,15 @@
 // -----------------------------------------------------------------------------
 
 .hero-section {
-  background-color: $dark-grey;
+  // background-color: $dark-grey;
+  .container {
+    padding: 2rem;
+    min-height: 50vh;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
 
   .header {
     position: relative;

@@ -3,11 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .header__logo {
-  max-width: 90%;
-  width: 50rem;
-  opacity: 0.1;
+  padding-left: 4rem;
 
-  @include tabletPlus {
-    margin-right: 10rem;
+  #logo {
+    max-width: 90%;
+    width: 50rem;
+    margin: 0 auto 2rem;
+    // opacity: 0.1;
+    display: block;
+
+    // @include tabletPlus {
+    //   margin-right: 10rem;
+    // }
   }
 }

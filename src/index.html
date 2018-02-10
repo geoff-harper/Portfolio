@@ -10,81 +10,47 @@
     Author: Geoff Harper
 
   //-->
-
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-  <!-- #DNS prefetching -->
-  <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
-  <link rel="dns-prefetch" href="//ajax.googleapis.com">
-  <link rel="dns-prefetch" href="//use.typekit.net">
-  <link rel="dns-prefetch" href="//google-analytics.com">
-
-  <!-- #Asset Prefetching -->
-  <!-- Fetch and Download Assets before requested by the user  -->
-  <!-- http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/#section:resource-prefetching -->
-  <link rel="prefetch" href="">
-
-  <!-- #Page Prefetching -->
-  <!-- http://calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
   <link rel="prefetch" href="index.html">
-
-  <!-- #Typekit -->
-
   <title>Geoff Harper | Portfolio</title>
   <meta name="description" content="A composition of all things web that I've done, as well as a few things Geoff.">
   <meta name="robots" content="all">
-
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-  <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
-  <!-- http://mathiasbynens.be/notes/touch-icons -->
-  <!-- <link rel="icon" type="image/ico" href="favicon.ico">
-  <link rel="icon" type="image/png" href="favicon.png"> -->
-
-  <!-- CSS, you gotta have style -->
   <link rel="stylesheet" href="css/main.css">
-
-  <!-- Modernizer, cause some browsers suck -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
 </head>
 <body>
   <section id="hero-section" class="section hero-section">
-    <header class="header">
-      <a href="#hero-section"><img class="header__logo" src="/assets/images/logo.svg" alt="Geoff Harper, logo" /></a>
+    <div class="container">
+      <a class="header__logo" href="#hero-section"><img src="/assets/images/logo.svg" alt="Geoff Harper, logo" /></a>
       <nav class="nav">
         <ul class="nav__list unlist">
-          <li class="nav__list-item"><a class="nav__link active" href="#portfolio-section">Portfolio</a></li>
+          <li class="nav__list-item"><a class="nav__link" href="#portfolio-section">Portfolio</a></li>
           <li class="nav__list-item"><a class="nav__link" href="#skills-section">Skills</a></li>
           <li class="nav__list-item"><a class="nav__link" href="#about-section">About Me</a></li>
           <li class="nav__list-item"><a class="nav__link" href="#contact-section">Contact Me</a></li>
         </ul>
       </nav>
-    </header>
-    <main class="spot-banner">
+    </div>
+    <!-- <div class="spot-banner">
       <h1 class="spot-banner__title">Hey I'm Geoff</h1>
       <p class="spot-banner__description">
         I'm here to make web stuff and chew bubblegum and I'm all out of bubblegum.
       </p>
       <a class="button spot-banner__button" href="#portfolio-section">See My Work</a>
-    </main>
-    <nav class="sticky-nav">
-      <a href="#portfolio-section" class="sticky-nav__link sq-icon--red"><img class="sq-icon sticky-nav__sq-icon" src="/assets/images/work.svg" alt="Portfolio section" /><span>Portfolio</span></a>
-      <a href="#skills-section" class="sticky-nav__link sq-icon--green"><img class="sq-icon sticky-nav__sq-icon" src="/assets/images/skills.svg" alt="Skills section" /><span>Skills</span></a>
-      <a href="#about-section" class="sticky-nav__link sq-icon--blue"><img class="sq-icon sticky-nav__sq-icon" src="/assets/images/about.svg" alt="About section" /><span>About Me</span></a>
-    </nav>
+    </div> -->
   </section>
 
   <section id="portfolio-section" class="section portfolio-section">
-    <div class="container">
-      <h2 class="subtitle">My Work</h2>
+    <div class="container two-col">
+      <h2 class="subtitle">
+        My Web Work
+        <img class="sq-icon sticky-nav__sq-icon" src="/assets/images/work.svg" alt="Portfolio section" />
+      </h2>
       <!-- SearchBars -->
       <article class="portfolio-example">
-        <a href="https://geoff-harper.github.io/SearchBars/" class="portfolio-example__link" target="_blank">
+        <a href="https://geoff-harper.github.io/search-bars/" class="portfolio-example__link" target="_blank" rel="noopener">
           <img class="portfolio-example__image" src="/assets/images/screenshot_searchBars.jpg" alt="SearchBars" />
           <div class="svg__link">
             <img src="/assets/images/link.svg" alt="Link" />
@@ -92,27 +58,37 @@
         </a>
         <h3 class="small-subtitle portfolio-example__small-subtitle">SearchBars</h3>
         <p class="portfolio-example__preamble">
-          SearchBars was a fun side project I came up with for the purpose of learning React. The premise of the web app is to be able to search for bars that serve your favourite craft beer or for your favourite bar’s tap list. Unfortunately, once I got the functionality down with 3 bars in my area, I realized that fleshing out the list (and then maintaining it) would be a staggering time commitment. Maybe one day someone will create a Vancouver bar scene API. I crafted the design and UX myself, with a touch of help on the clever name (thanks Alex).
+          SearchBars was a fun side project I came up with for the purpose of learning React. The premise of the web app is to be able to search for bars that serve your favourite craft beer or for your favourite bar’s tap list. Unfortunately, once I got the functionality down with 3 bars in my area and added a few more, I realized that fleshing out the list (and then divtaining it) would be a staggering time commitment for a fun side project. Maybe one day someone will create a Vancouver bar scene API. I crafted the design and UX myself, with a touch of help on the clever name (thanks Alex).
         </p>
-        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/SearchBars/" target="_blank">See More</a>
+        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/search-bars/" target="_blank" rel="noopener">See Full Project</a>
       </article>
       <!-- YP Site Viewer -->
       <article class="portfolio-example">
-        <a href="https://geoff-harper.github.io/YP-site-viewer/" class="portfolio-example__link" target="_blank">
-          <img class="portfolio-example__image" src="/assets/images/screenshot_siteViewer.jpg" alt="YellowPages Site Viewer" />
+        <a href="https://geoff-harper.github.io/yp-site-viewer/" class="portfolio-example__link" target="_blank" rel="noopener">
+          <img class="portfolio-example__image" src="/assets/images/screenshot_siteViewer.jpg" alt="Yellow Pages Site Viewer" />
           <div class="svg__link">
             <img src="/assets/images/link.svg" alt="Link" />
           </div>
         </a>
-        <h3 class="small-subtitle portfolio-example__small-subtitle">YellowPages Site Viewer</h3>
+        <h3 class="small-subtitle portfolio-example__small-subtitle">Yellow Pages Site Viewer</h3>
         <p class="portfolio-example__preamble">
-          This site previewer was something I developed in my spare time at YellowPages. Its purpose is to compile screenshots of some sites we created. This was done with vanilla CSS and Javascript so no particularly fancy tech was used. I wanted the aesthetic to simulate flipping through a box of vinyls which I tried to achieve with 3D transforms and box shadows. All of the previews themselves were designed and built by myself on our proprietary WYSIWYG platform. It should be noted that all the previews are drafts and belong to YellowPages&trade;.
+          This website previewer was something I developed in my spare time at Yellow Pages. Its purpose is to compile screenshots of some sites we created. This was done with vanilla CSS and Javascript so no particularly fancy tech was used. I wanted the aesthetic to simulate flipping through a box of vinyls which I tried to achieve with 3D transforms and box shadows. All of the previews themselves were designed and built by myself on our proprietary WYSIWYG platform. It should be noted that all the previews are drafts and belong to Yellow Pages.
         </p>
-        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/YP-site-viewer/" target="_blank">See More</a>
+        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/yp-site-viewer/" target="_blank" rel="noopener">See Full Project</a>
+      </article>
+      <!-- CSS recreations -->
+      <article class="portfolio-example">
+        <img class="portfolio-example__image" src="/assets/images/screenshot_recreations.jpg" alt="CSS recreations" />
+        <h3 class="small-subtitle portfolio-example__small-subtitle">CSS Recreations</h3>
+        <p class="portfolio-example__preamble">
+          These two examples were free time projects. The first was definitely a labour of love. Anybody who knows me can corroborate my Star Wars fanboyism so this seemed like a great first stab at “drawing” with CSS. <em>Hint: click on stuff.</em> My greatest regret is not trying harder to find a lightsaber sfx. I wanted something harder than the blocky lightsaber so the other recreation I attempted is the Yellow Pages logo. The non-rectangular nature of the logo made it quite a bit more challenging to complete. I was also prompted to create a “How Did You Do It?” filter so I coded that as well.
+        </p>
+        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/obi-wan-lightsaber/" target="_blank" rel="noopener">See Lightsaber</a>
+        <a class="button portfolio-example__button" href="https://geoff-harper.github.io/yellowpages-logo/" target="_blank" rel="noopener">See Logo</a>
       </article>
       <!-- Bodyfuel Supplements -->
       <article class="portfolio-example">
-        <a href="http://bodyfuelsupplements.ca/" class="portfolio-example__link" target="_blank">
+        <a href="http://bodyfuelsupplements.ca/" class="portfolio-example__link" target="_blank" rel="noopener">
           <img class="portfolio-example__image" src="/assets/images/screenshot_bodyfuel.jpg" alt="Bodyfuel Supplements" />
           <div class="svg__link">
             <img src="/assets/images/link.svg" alt="Link" />
@@ -120,45 +96,66 @@
         </a>
         <h3 class="small-subtitle portfolio-example__small-subtitle">Bodyfuel Supplements</h3>
         <p class="portfolio-example__preamble">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Bodyfuel is one of several handfuls of Wordpress sites I have under my belt. This one in particular has quite a bit of content and a large catalogue of products. The personal fitness vertical also lends itself well to interesting photography which I liked about it. I had a fair bit of leeway on the design of this site. It’s seen some unfortunate revisions since I relinquished control but still reflects my original vision. Tech-wise it’s a pretty standard WP site with some custom written PHP added in to trim up the product catalogues.
         </p>
-        <a class="button portfolio-example__button" href="http://bodyfuelsupplements.ca/" target="_blank">See More</a>
+        <a class="button portfolio-example__button" href="http://bodyfuelsupplements.ca/" target="_blank" rel="noopener">See Full Project</a>
       </article>
-
     </div>
   </section>
 
   <section id="skills-section" class="section skills-section">
-    <div class="container">
-      <h2 class="subtitle">My Skills dawg</h2>
+    <div class="container four-col">
+      <h2 class="subtitle">
+        My Skills
+        <img class="sq-icon sticky-nav__sq-icon" src="/assets/images/skills.svg" alt="Skills section" />
+      </h2>
       <div class="skills-column">
-        <h3 class="small-subtitle skills-column__small-subtitle">Markup</h3>
+        <h3 class="small-subtitle skills-column__small-subtitle">
+          <img class="skills-icon" src="/assets/images/markup.svg" alt="Markup icon" />
+          Markup
+        </h3>
         <ul>
-          <li class="skills-column__list-item">Tech 1</li>
-          <li class="skills-column__list-item">Tech 2</li>
-          <li class="skills-column__list-item">Tech 3</li>
-          <li class="skills-column__list-item">Tech 4</li>
-          <li class="skills-column__list-item">Tech 5</li>
+          <li class="skills-column__list-item">HTML5</li>
+          <li class="skills-column__list-item">JSX</li>
+          <li class="skills-column__list-item">Wordpress</li>
+          <li class="skills-column__list-item">JS Templating</li>
+          <li class="skills-column__list-item">Shopify &amp; Liquid</li>
         </ul>
       </div>
       <div class="skills-column">
-        <h3 class="small-subtitle skills-column__small-subtitle">Styling</h3>
+        <h3 class="small-subtitle skills-column__small-subtitle">
+          <img class="skills-icon" src="/assets/images/styling.svg" alt="Styling icon" />
+          Styling
+        </h3>
         <ul>
-          <li class="skills-column__list-item">Tech 1</li>
-          <li class="skills-column__list-item">Tech 2</li>
-          <li class="skills-column__list-item">Tech 3</li>
-          <li class="skills-column__list-item">Tech 4</li>
-          <li class="skills-column__list-item">Tech 5</li>
+          <li class="skills-column__list-item">CSS3+</li>
+          <li class="skills-column__list-item">SASS</li>
+          <li class="skills-column__list-item">SVG</li>
+          <li class="skills-column__list-item">LESS</li>
+          <li class="skills-column__list-item">PostCSS</li>
         </ul>
       </div>
       <div class="skills-column">
-        <h3 class="small-subtitle skills-column__small-subtitle">Scripting</h3>
+        <h3 class="small-subtitle skills-column__small-subtitle">
+          <img class="skills-icon" src="/assets/images/scripting.svg" alt="Scripting icon" />
+          Scripting
+        </h3>
         <ul>
-          <li class="skills-column__list-item">Tech 1</li>
-          <li class="skills-column__list-item">Tech 2</li>
-          <li class="skills-column__list-item">Tech 3</li>
-          <li class="skills-column__list-item">Tech 4</li>
-          <li class="skills-column__list-item">Tech 5</li>
+          <li class="skills-column__list-item">ES6</li>
+          <li class="skills-column__list-item">Vue.js</li>
+          <li class="skills-column__list-item">React.js</li>
+          <li class="skills-column__list-item">PHP</li>
+          <li class="skills-column__list-item">jQuery</li>
+        </ul>
+      </div>
+      <div class="skills-column">
+        <h3 class="small-subtitle skills-column__small-subtitle">Workflow</h3>
+        <ul>
+          <li class="skills-column__list-item">Node &amp; npm</li>
+          <li class="skills-column__list-item">Webpack &amp; Gulp</li>
+          <li class="skills-column__list-item">Git &amp; GitHub</li>
+          <li class="skills-column__list-item">Photoshop</li>
+          <li class="skills-column__list-item">Illustrator</li>
         </ul>
       </div>
     </div>
@@ -166,34 +163,47 @@
 
   <section id="about-section" class="section about-section">
     <div class="container">
-      <h2 class="subtitle">My me dawg</h2>
-      <img class="about__headshot" src="" alt="Me. My photo." />
-      <p class="about__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <h2 class="subtitle">
+        Myself
+        <img class="sq-icon sticky-nav__sq-icon" src="/assets/images/about.svg" alt="About section" />
+      </h2>
+      <div>
+        <img class="about__headshot" src="/assets/images/headshot.jpg" alt="Me. My photo." />
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
     </div>
   </section>
 
   <section id="contact-section" class="section contact-section">
     <div class="container">
-      <h2 class="subtitle">My contact dawg</h2>
+      <h2 class="subtitle">Contact Me</h2>
       <p class="contact__prompt">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Want to drop me an email? Fill out the form and I'll get back to you as quick as I can.
       </p>
       <form class="contact__form">
-        <label>Name <input type="text" name="name" autocomplete="name" required /></label>
-        <label>Email <input type="email" name="email" autocomplete="email" required /></label>
-        <label>Phone <input type="tel" name="phone" autocomplete="tel" /></label>
-        <label>Message <textarea required></textarea></label>
-        <input type="submit" value="Send" />
+        <label for="form-name" class="input-text">
+          <span>Name </span><input id="form-name" type="text" name="name" autocomplete="name" required />
+        </label>
+        <label for="form-email" class="input-text">
+          <span>Email </span><input id="form-email" type="email" name="email" autocomplete="email" required />
+        </label>
+        <label for="form-phone" class="input-text">
+          <span>Phone </span><input id="form-phone" type="tel" name="phone" autocomplete="tel" />
+        </label>
+        <label for="form-message" class="input-textarea">
+          <span>Message </span><textarea id="form-message" required></textarea>
+        </label>
+        <input class="button" type="submit" value="Send" />
       </form>
     </div>
   </section>
 
   <!-- SCRIPTS -->
   <script src="js/app.js"></script>
-
-  <!-- Google Analytics -->
-
 </body>
 </html>

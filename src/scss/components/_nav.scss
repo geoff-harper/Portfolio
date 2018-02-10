@@ -15,9 +15,19 @@
         flex-shrink: 0;
       }
       @include desktop {
+        border-left: 1px solid $light-grey;
+
+        &:first-of-type {
+          border-left: none;
+        }
+
         @include on-event {
+          border-color: transparent;
+
           .nav__link {
             transform: translateY(-1rem);
+            background-color: $brand-red;
+            color: $white;
           }
         }
       }
@@ -25,7 +35,7 @@
 
     .nav__link {
       display: block;
-      padding: 2rem;
+      padding: 1.5rem 3rem;
       background-color: $white;
       color: $text-color;
       text-align: center;
@@ -33,16 +43,6 @@
       font-weight: 400;
       font-size: 3rem;
       transition: transform 150ms ease-in-out;
-
-      @include on-event() {
-        background-color: $brand-red;
-        color: $white;
-      }
-
-      &.active {
-        background-color: $brand-blue;
-        color: $white;
-      }
     }
   }
 }
