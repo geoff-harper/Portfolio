@@ -24,6 +24,10 @@
         @include on-event {
           border-color: transparent;
 
+          & + .nav__list-item {
+            border-left: none;
+          }
+
           .nav__link {
             transform: translateY(-1rem);
             background-color: $brand-red;

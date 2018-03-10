@@ -5,7 +5,6 @@
 .portfolio-example {
   margin-bottom: 2rem;
   overflow: hidden;
-  cursor: pointer;
 
   .portfolio-example__link {
     position: relative;
@@ -48,5 +47,7 @@
     margin: 0 auto;
     max-width: 100%;
     border: $img-border;
+    cursor: pointer;
+    // filter: saturate(0.6);
   }
 }
