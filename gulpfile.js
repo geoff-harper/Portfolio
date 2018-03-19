@@ -29,7 +29,7 @@ var gulp        = require('gulp'),
 
 var bases = {
     app:  'src/',
-    dist: 'dist/',
+    dist: 'docs/',
 };
 
 colors.setTheme({
