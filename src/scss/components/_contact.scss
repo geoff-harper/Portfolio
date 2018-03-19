@@ -6,7 +6,7 @@
   margin-bottom: 5rem;
 
   .contact__form {
-    @include desktop {
+    @include tabletPlus {
       display: grid;
 
       grid-template-columns: 1fr 1fr 1fr;
@@ -16,8 +16,6 @@
         grid-column: 1 / -1;
       }
     }
-    // padding: 3rem 2rem;
-    // background-color: $light-grey;
 
     label {
       display: block;

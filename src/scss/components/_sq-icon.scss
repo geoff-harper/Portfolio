@@ -5,6 +5,11 @@
 .sq-icon {
   width: 5rem;
   height: 5rem;
+  display: none;
+
+  @include tabletPlus() {
+    display: block;
+  }
 
   path {
     fill: $white;

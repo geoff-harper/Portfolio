@@ -8,14 +8,14 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding: 5rem 2rem 0;
+  padding: 0 2rem 5rem;
   max-width: $max-width;
   width: 100%;
 
   @include tabletPlus {
     padding: 6rem 2rem 0;
   }
-  @include desktop {
+  @include tabletPlus {
     display: grid;
 
     grid-template-columns: 1fr;
@@ -29,12 +29,15 @@
 }
 
 .container.two-col {
-  @include desktop {
+  @include tabletPlus {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .container.four-col {
+  @include tabletPlus {
+    grid-template-columns: 1fr 1fr;
+  }
   @include desktop {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -73,5 +76,6 @@
  */
 .unlist {
   padding: 0;
+  margin: 0;
   list-style: none;
 }

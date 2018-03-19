@@ -5,7 +5,7 @@ html { font-size: 62.5%; }
 
 body {
  color: $text-color;
- font-weight: 300;
+ font-weight: 400;
  font-size: 1.6rem;
  font-family: $text-font-stack;
  line-height: 1.5em;
@@ -20,13 +20,14 @@ h2.subtitle {
   padding: 1rem 2rem;
   background-color: $brand-blue;
   color: $white;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
   line-height: 1.2em;
 
-  @include desktop {
+  @include tabletPlus {
     margin: 0 0 1rem;
     padding: 1rem 4rem;
     display: flex;
+    font-size: 4.8rem;
     justify-content: space-between;
     align-items: center;
   }

@@ -5,9 +5,11 @@
 .about-section {
   .about__headshot {
     max-width: 100%;
+    width: 40rem;
     border: $img-border;
+    margin: 0 auto 2rem;
 
-    @include desktop {
+    @include tabletPlus {
       float: left;
       max-width: 35%;
       margin: 0 2rem 2rem 0;

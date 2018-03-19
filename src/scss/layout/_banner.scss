@@ -3,10 +3,8 @@
 // -----------------------------------------------------------------------------
 
 .hero-section {
-  // background-color: $dark-grey;
   .container {
     padding: 2rem;
-    min-height: 50vh;
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
@@ -28,50 +26,6 @@
       align-items: flex-end;
       width: 70%;
       background-size: 70rem 100%;
-    }
-  }
-
-  .spot-banner {
-    padding: 5rem 2rem 0;
-
-    @include tabletPlus {
-      width: 70%;
-    }
-    @include desktop {
-      padding: 7rem 6rem;
-      width: 50%;
-    }
-
-    .spot-banner__title {
-      color: $white;
-      font-size: 10rem;
-      line-height: 1em;
-
-      @include desktop {
-        margin-left: -8rem;
-        font-size: 18rem;
-      }
-    }
-
-    .spot-banner__description {
-      color: $white;
-      font-weight: 400;
-      font-size: 3rem;
-      line-height: 1.2em;
-
-      @include desktop {
-        font-size: 5rem;
-      }
-    }
-
-    .spot-banner__button {
-      margin-bottom: 5rem;
-      padding: 2rem 3rem;
-      font-size: 2rem;
-
-      @include desktop {
-        margin-bottom: 0;
-      }
     }
   }
 }
