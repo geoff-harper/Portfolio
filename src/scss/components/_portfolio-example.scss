@@ -10,7 +10,7 @@
     position: relative;
     display: block;
     overflow: hidden;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
     @include on-event() {
       .svg__link {
@@ -42,6 +42,18 @@
     }
   }
 
+  .portfolio-example__tags {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 3rem;
+
+    .portfolio-example__tag {
+      background-color: $light-grey;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   .portfolio-example__image {
     display: block;
     margin: 0 auto;
@@ -49,4 +61,8 @@
     border: $img-border;
     cursor: pointer;
   }
+}
+
+.recreations .portfolio-example__image {
+  margin-bottom: 2rem;
 }

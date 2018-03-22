@@ -825,7 +825,7 @@ p {
   position: relative;
   display: block;
   overflow: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio-example .portfolio-example__link:hover .svg__link, .portfolio-example .portfolio-example__link:active .svg__link, .portfolio-example .portfolio-example__link:focus .svg__link {
@@ -857,12 +857,30 @@ p {
   fill: #FFFFFF;
 }
 
+.portfolio-example .portfolio-example__tags {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin-bottom: 3rem;
+}
+
+.portfolio-example .portfolio-example__tags .portfolio-example__tag {
+  background-color: #ededed;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
 .portfolio-example .portfolio-example__image {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   border: 1rem solid #ededed;
   cursor: pointer;
+}
+
+.recreations .portfolio-example__image {
+  margin-bottom: 2rem;
 }
 
 .skills-column ul {
